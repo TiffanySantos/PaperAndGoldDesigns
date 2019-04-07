@@ -8,22 +8,34 @@
         <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body>
-       <h1>PaperAndGoldDesigns</h1> 
+    <div class="wrapper">        
+        <div class="topbanner">
+            <div class="PaperAndGoldDesigns">PaperAndGoldDesigns</div>
+            <img id="bannerphoto" img src="https://i.etsystatic.com/isbl/2fa9b0/31626438/isbl_1500x120.31626438_dthpk79w.jpg?version=0"/>  
+        </div>      
        <nav class="navbar">
-           <ul> 
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <a href="#" class=toggleNav>≡ Menu</a>
+            <ul> 
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
             </ul>
-    
-    </body>
-    <footer>
-      <div class="contact">
-          <p>Bespoke greeting card books handmade in</br>
-          Barnstable, Devon, England</p>
-      </div>
-    </footer>
+
+      <div class="bottombanner">
+              <img id="logo" src= "https://i.etsystatic.com/isla/52d383/32991781/isla_180x180.32991781_laut7bdm.jpg?version=0" alt="logo" width="80" height="80"> 
+              <div class="bespoke"><p>Bespoke greeting card books handmade in Barnstable, Devon, England</p></div>
+        </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function() {
+     $('.toggleNav').on('click',function() {
+         $('.navbar ul').toggleClass('open');
+     });  
+    });
+</script>
+</body>
 </html>
